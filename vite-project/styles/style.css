@@ -7,3 +7,20 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+.animation{
+  background-color: black;
+  height: 90vh;
+}
+.header-animation{
+  font-size: 60px;
+  color: white;
+  background-color: var(--light-blue);
+  text-align: center;
+}
+:root{
+  --light-blue:#2998ff;
+  --h2:7.594rem;
+}
+h2{
+  font-size: var(--h2);
+}

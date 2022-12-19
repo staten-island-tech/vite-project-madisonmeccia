@@ -1,7 +1,8 @@
 body{
-    background-color: blueviolet;
+   background-color: lightcoral;
 }
 h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin: 2rem;
+    margin-top: 14rem;
 }
