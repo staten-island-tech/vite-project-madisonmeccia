@@ -13,17 +13,17 @@
 }
 .header-animation{
   font-size: 60px;
-  color: white;
+  color: black;
   background-color: var(--primary);
   text-align: center;
   font-size: var(--h2);
 }
 :root{
-  --purple:#c865df;
-  --dark-blue:#ea5cc9;
+  --purple:#e84545;
+  --dark-blue:#000000;
   --black: #000;
-  --light-red:#71c4f8;
-  --dark-red: #5d0b93;
+  --light-red:#98bd7b;
+  --dark-red: #ffffff;
   --gray: #252c30;
      /*intentions*/
  --primary:var(--purple);
@@ -54,5 +54,5 @@
 }
 .btn:hover{
   transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(153, 6, 94, 0.737);
+  box-shadow: 0 10px 0.5rem rgba(255, 139, 139, 0.737);
 }
