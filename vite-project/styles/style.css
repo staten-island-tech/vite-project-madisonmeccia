@@ -17,6 +17,7 @@
   background-color: var(--primary);
   text-align: center;
   font-size: var(--h2);
+  margin-top: -350px; 
 }
 :root{
   --purple:#e84545;
@@ -51,8 +52,14 @@
   border:none;
   border-radius: 7rem;
   transition: all 0.2s;
+  color: ;
 }
 .btn:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(255, 139, 139, 0.737);
+  transform: translateY(5px);
+  box-shadow: 0 10px 0.5rem pink;
+}
+
+.header-animation:hover{
+  transform: translateY(15px);
+  box-shadow: 0 10px 0.5rem pink;
 }
