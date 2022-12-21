@@ -2,16 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="https://www.nicepng.com/png/full/49-490301_russian-flag-circle-russia-png.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>menu</title>
+    <title>Moi Blin</title>
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
-  <body>
-    <div id="app"></div>
-    <section class="animation">
-      <h2 class="header-animation">italian food!</h2>
-      <button class="btn">Click me!</button>
-    </section>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+  <body class="light">
+      <div class="bar" id="body">
+        <div class="tab logo">
+            <img src="./images/logo-red.png" alt="Moi Blin" class="logoPic">
+            
+        </div>
+        <div class="tab full selector">
+          <button class="show showFull">Show Full Menu</button>
+        </div>
+        <div class="tab vegetarian selector">
+          <button class="show showVeg">Vegetarian Options</button>
+        </div>
+        <div class="tab meat selector">
+          <p class="meatTitle">Select A Meat</p>
+          <div class="meatSelector" tabindex="1"> 
+            <input class="selectopt" name="test" type="radio" id="opt1" checked value="all">
+            <label for="opt1" class="option">All</label>
+            <input class="selectopt" name="test" type="radio" id="opt2" value="beef">
+            <label for="opt2" class="option">Beef</label>
+            <input class="selectopt" name="test" type="radio" id="opt3" value="chicken">
+            <label for="opt3" class="option" >Chicken</label>
+            <input class="selectopt" name="test" type="radio" id="opt4" value="lamb">
+            <label for="opt4" class="option">Lamb</label>
+          </div>
+        </div>
+        <div class="tab theme" >
+            <button id="view" class="view" ></button>
+        </div>
+      </div>
+    <div class="menu">
+    </div>
+    <div class="fakespace"></div>
+    <script type="module" src="./js/main.js">
+    </script>
+</body>
 </html>
