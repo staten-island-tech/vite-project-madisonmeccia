@@ -63,12 +63,12 @@ body {
 .bar {
     display: flex;
     position: fixed;
-    width: 120rem;
+    width: 180rem;
     height: 10rem;
     background-color: var(--bar-bg);
     border-bottom: solid .5rem var(--border-color);
     border-style: double;
-    margin-left: 35px;
+    margin-left: 50px;
     align-items: center;
 }
 
