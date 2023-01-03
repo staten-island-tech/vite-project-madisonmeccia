@@ -1,0 +1,77 @@
+html,
+body,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+.food {
+    width: 30vw;
+    height: 45vw;
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10rem;
+}
+
+.light {
+    background-color: rgb(183, 118, 204);
+    box-shadow: 1rem 4rem 5rem 3rem rgb(136, 50, 170);
+    --meat-hover: var(--darker-red); 
+    --meat-bg: var(--red);
+    --border-color: var(--whites);
+    --button-color1: var(--light-red);
+    --button-color2: var(--orange-red);
+    --border-colorX: var(--white);
+    --bar-bg: var(--blue);
+}
+
+.dark {
+    background-color: rgba(147, 105, 238, 0.469);
+    color: black;
+    --meat-hover: var(--blue); 
+    --meat-bg: var(--dark-blue);
+    --border-color: var(--black);
+    --button-color1: var(--blue);
+    --button-color2: var(--light-blue);
+    --border-colorX: var(--black);
+    --bar-bg: var(--darker-blue);
+}
+
+.name {
+    font-size: 5rem;
+    font-weight:900;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.description {
+    display: block;
+    margin-bottom: 1rem;
+}
+.pick {
+    color: rgb(210, 158, 224);
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    width:30rem;
+    height:40px;
+    background-color: rgb(0, 0, 0);
+  }
+.pick:hover{
+    color: azure;
+  background-color: cornflowerblue;
+}
+.price {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.foodImg {
+    width:80%;
+    height: 160px;
+    border-radius: 10rem;
+}

@@ -1,61 +1,30 @@
-/*import "../styles/style.css";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
 import { menu } from "./menu.js";
-console.log(menu);
-document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("light")) {
-    document.body.classList.add("dark");
-    document.body.classList.remove("light");
-  } else {
-    document.body.classList.add("light");
-    document.body.classList.remove("dark");
-  }
-}); */
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
+let theme = "light",
+  dayToday = 0,
+  dailyMenu = 0;
 
 const window = {
-  view: document.getElementById("view"),
-  bar: document.querySelector(".bar"),
-  tab: document.querySelectorAll(".tab"),
   menu: document.querySelector(".menu"),
-  logoPic: document.querySelector(".logoPic"),
   food: document.querySelectorAll(".food"),
-  meatTitle: document.querySelector(".meatTitle"),
   meatOption: document.querySelectorAll(".selectopt"),
   meatSelect: document.querySelector('input[name="test"]:checked').value,
   root: document.querySelector(":root"),
-  showVeg: document.querySelector(".showVeg"),
-  showFull: document.querySelector(".showFull"),
+  showNomeat: document.querySelector(".showNomeat"),
+  showAll: document.querySelector(".showAll"),
 };
 
-window.view.addEventListener("click", function () {
-  if (this.style.backgroundImage == 'url("../images/sun.png")') {
-    this.style.backgroundImage = "url('../images/moon.png')";
-    window.logoPic.src = "../images/logo-blue.png";
-
-    document.body.classList = "dark";
-    theme = "foodDark";
-    createMenu();
-  } else {
-    this.style.backgroundImage = 'url("../images/sun.png")';
-    window.logoPic.src = "../images/logo-red.png";
-
-    document.body.classList = ["light"];
-    theme = "foodLight";
-    createMenu();
-  }
-});
-
 document.body.onload = function () {
-  window.view.style.backgroundImage = "url('../images/sun.png')";
   createMenu();
   update();
 };
 
-window.showVeg.addEventListener("click", function () {
-  sortMenu("no meat");
+window.showNomeat.addEventListener("click", function () {
+  sortMenu("n/a");
 });
 
 window.meatOption.forEach((input) =>
@@ -68,11 +37,9 @@ window.meatOption.forEach((input) =>
   })
 );
 
-window.showFull.addEventListener("click", function () {
+window.showAll.addEventListener("click", function () {
   deals("buttonPress");
 });
-
-setInterval(update, 10000);
 
 function update() {
   console.log("running");
@@ -85,11 +52,11 @@ function update() {
 }
 function deals(change) {
   if (change == "buttonPress") {
-    if (window.showFull.innerHTML == "Show Full Menu") {
-      window.showFull.innerHTML = "Show Daily Deals";
+    if (window.showAll.innerHTML == "complete menu") {
+      window.showAll.innerHTML = "half price!";
       createMenu();
     } else {
-      window.showFull.innerHTML = "Show Full Menu";
+      window.showAll.innerHTML = "complete menu";
       createDayMenu();
     }
   } else {
@@ -104,7 +71,7 @@ function createDayMenu() {
   dailyMenu.forEach((item) => {
     window.menu.insertAdjacentHTML(
       "afterbegin",
-      `<div class="food ${theme}">
+      `<div class="food ${item.theme}">
         <p1 class="name">${item.dish}</p1>
         <p2 class="description">${item.description}</p2>
         <strike>$${item.price}</strike>
@@ -136,7 +103,7 @@ function sortMenu(meatType) {
   sortedMenu.forEach((food) => {
     window.menu.insertAdjacentHTML(
       "afterbegin",
-      `<div class="food ${theme}">
+      `<div class="food" ${food.theme}>
         <p1 class="name">${food.dish}</p1>
         <p2 class="description">${food.description}</p2>
         <p3 class="price">$${food.price}</p3>
@@ -144,3 +111,12 @@ function sortMenu(meatType) {
     );
   });
 }
+document.querySelector(".btn").addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  }
+});

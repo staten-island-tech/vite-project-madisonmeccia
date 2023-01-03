@@ -1,11 +1,5 @@
-body{
-   background-color: black;
-}
-h1,h2,h3,h4,h5,h6{
-    text-align: center;
-    margin: 2rem;
-    margin-top: 14rem;
-}
+
+
 .logo {
     width: 35rem;
     padding: 1rem;
@@ -15,29 +9,14 @@ h1,h2,h3,h4,h5,h6{
     display: block;
     margin: auto;
     margin-top: auto;
-    width: 20rem;
+    width: 18rem;
+    height: 75px;
 }
-
 
 .theme {
     width: 10rem;
     border: 0;
     padding: 1px;
-}
-
-.view {
-    width: 7rem;
-    height: 7rem;
-    display: block;
-    margin: auto;
-    background-color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.view:hover {
-    scale: 1.1;
 }
 
 .vegetarian {
@@ -46,24 +25,15 @@ h1,h2,h3,h4,h5,h6{
 
 .show {
   background-color: transparent;
-  border: 1px solid var(--border-colorX);
   box-sizing: border-box;
+  border-color: pink;
+  border-style: dashed;
   color: #00132C;
-  font-family: "Avenir Next LT W01 Bold",sans-serif;
   font-size: 16px;
-  font-weight: 700;
   line-height: 24px;
   padding: 16px 23px;
   position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-.show:hover,
-.show:active {
-  outline: 0;
 }
 
 .show:hover {
@@ -86,11 +56,6 @@ h1,h2,h3,h4,h5,h6{
 .show:hover:before {
   background-color: var(--button-color2);
   
-}
-
-
-.full {
-    width: 35rem;
 }
 
 .meat {

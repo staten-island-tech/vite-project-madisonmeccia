@@ -2,43 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="https://www.nicepng.com/png/full/49-490301_russian-flag-circle-russia-png.png" />
+    <link rel="icon" type="image" href="./images/pic.png/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moi Blin</title>
+    <title>italy's kitchen</title>
     <link rel="stylesheet" href="./styles/style.css">
   </head>
-  <body class="light">
+  <body>
       <div class="bar" id="body">
-        <div class="tab logo">
-            <img src="./images/logo-red.png" alt="Moi Blin" class="logoPic">
+        <div class="tabLogo">
+            <img src="./images/logo.png" alt="italy's kitchen" class="logoPic">
             
         </div>
-        <div class="tab full selector">
-          <button class="show showFull">Show Full Menu</button>
+        <button class="btn">click me</button>
+        <div class="tabfs">
+          <button class="show showAll">complete menu</button>
         </div>
-        <div class="tab vegetarian selector">
-          <button class="show showVeg">Vegetarian Options</button>
-        </div>
+      
+          <button class="show showNomeat">meat free</button>
+          
         <div class="tab meat selector">
-          <p class="meatTitle">Select A Meat</p>
-          <div class="meatSelector" tabindex="1"> 
-            <input class="selectopt" name="test" type="radio" id="opt1" checked value="all">
-            <label for="opt1" class="option">All</label>
-            <input class="selectopt" name="test" type="radio" id="opt2" value="beef">
-            <label for="opt2" class="option">Beef</label>
-            <input class="selectopt" name="test" type="radio" id="opt3" value="chicken">
-            <label for="opt3" class="option" >Chicken</label>
-            <input class="selectopt" name="test" type="radio" id="opt4" value="lamb">
-            <label for="opt4" class="option">Lamb</label>
+          <p class="select">select</p>
+          <div class="pick" tabindex="1"> 
+            <input class="selectopt" name="test" type="radio" id="opt1" value="beef">
+            <label for="opt1" class="option">beef</label>
+            <input class="selectopt" name="test" type="radio" id="opt2" value="chicken">
+            <label for="opt2" class="option" >chicken</label>
+            <input class="selectopt" name="test" type="radio" id="opt3" value="fish">
+            <label for="opt3" class="option">fish</label>
+            <input class="selectopt" name="test" type="radio" id="opt4" value="pepperoni">
+            <label for="opt4" class="option">pepperoni</label>
+            <input class="selectopt" name="test" type="radio" id="opt5" checked value="all">
+            <label for="opt5" class="option">all</label>
           </div>
         </div>
-        <div class="tab theme" >
-            <button id="view" class="view" ></button>
-        </div>
-      </div>
-    <div class="menu">
-    </div>
-    <div class="fakespace"></div>
+      </div><div class="menu"> </div>
     <script type="module" src="./js/main.js">
     </script>
 </body>
