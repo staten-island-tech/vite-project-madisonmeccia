@@ -68,8 +68,9 @@ body {
     background-color: var(--bar-bg);
     border-bottom: solid .5rem var(--border-color);
     border-style: double;
-    margin-left: 35px;
+    justify-content: center;
     align-items: center;
+    margin-left: 25px;
 }
 
 .tab {

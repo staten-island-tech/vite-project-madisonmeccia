@@ -11,11 +11,11 @@ let theme = "light",
 const window = {
   menu: document.querySelector(".menu"),
   food: document.querySelectorAll(".food"),
+  showNomeat: document.querySelector(".showNomeat"),
+  showAll: document.querySelector(".showAll"),
   meatOption: document.querySelectorAll(".selectopt"),
   meatSelect: document.querySelector('input[name="test"]:checked').value,
   root: document.querySelector(":root"),
-  showNomeat: document.querySelector(".showNomeat"),
-  showAll: document.querySelector(".showAll"),
 };
 
 document.body.onload = function () {
@@ -53,7 +53,7 @@ function update() {
 function deals(change) {
   if (change == "buttonPress") {
     if (window.showAll.innerHTML == "complete menu") {
-      window.showAll.innerHTML = "half price!";
+      window.showAll.innerHTML = "sale price!";
       createMenu();
     } else {
       window.showAll.innerHTML = "complete menu";
@@ -65,7 +65,7 @@ function deals(change) {
 }
 
 function createDayMenu() {
-  console.log(1);
+  console.log(0);
 
   window.menu.replaceChildren();
   dailyMenu.forEach((item) => {
@@ -75,7 +75,7 @@ function createDayMenu() {
         <p1 class="name">${item.dish}</p1>
         <p2 class="description">${item.description}</p2>
         <strike>$${item.price}</strike>
-        <p3 class="price">$ ${item.price / 2}</p3>
+        <p3 class="price">$ ${item.price / 4}</p3>
         <img src="${item.image}" class="foodImg">`
     );
   });
