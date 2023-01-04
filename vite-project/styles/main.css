@@ -10,7 +10,7 @@ body,
 
 .food {
     width: 30vw;
-    height: 45vw;
+    height: 30vw;
     font-size: 4rem;
     text-align: center;
     padding: 2rem;
@@ -71,7 +71,7 @@ body,
 }
 
 .foodImg {
-    width:80%;
-    height: 160px;
+    width:60%;
+    height: 220px;
     border-radius: 10rem;
 }

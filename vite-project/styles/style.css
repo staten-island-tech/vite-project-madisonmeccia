@@ -63,12 +63,16 @@ body {
 .bar {
     display: flex;
     position: fixed;
-    width: 120rem;
+    width: 180rem;
     height: 10rem;
     background-color: var(--bar-bg);
     border-bottom: solid .5rem var(--border-color);
     border-style: double;
+<<<<<<< HEAD
     justify-content: center;
+=======
+    margin-left: 50px;
+>>>>>>> 18f683a566f284ce006a0d3620b799a231b2b418
     align-items: center;
     margin-left: 25px;
 }
